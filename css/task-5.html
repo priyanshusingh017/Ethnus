@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<html>
+<head>
+    <title>My first styled page</title>
+    <style>
+        .body {
+            background-color: #d2dd4a;
+            font-family: serif;
+            width: 40%;
+            height: 25%;
+            padding: 20px;
+            margin-top: 250px;
+            margin-right: 250px;
+            margin-left: 250px;
+            border: dotted 1px purple;
+            border-bottom: none;
+        }
+
+        .navigation {
+            width: 150px;
+            float: left;
+            margin-right: 30px;
+        }
+
+        .navigation a {
+            display: block;
+            background-color: white;
+            color: blue;
+            text-decoration: none;
+            padding: 5px 10px;
+            margin-bottom: 5px;
+            border: 1px solid #999;
+            border-right: solid 20px black;
+        }
+
+        .navigation a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            margin-left: 180px;
+        }
+
+        h1 {
+            color: purple;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        h2,p,h3 {
+            color: purple;
+            margin: 10px 0;
+        }
+
+        .date {
+            color: purple;
+            font-style: italic;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px dotted purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="body">
+    <div class="navigation">
+        <a href="#">Home page</a>
+        <a href="#">Musings</a>
+        <a href="#">My town</a>
+        <a href="#">Links</a>
+    </div>
+
+    <div class="content">
+        <h1>My first styled page</h1>
+        <h2>Welcome to my styled page!</h2>
+        <p>It lacks images, but at least it has style. And it has links, even if they don't go anywhere...</p>
+        <p>There should be more here, but I don't know what yet.</p>
+        
+        <p class="date">Made 5 April 2004<br>by myself.</p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoverable Sidenav Buttons</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+      
+        .sidebar {
+            display: flex;
+            height: 200px;
+            width: 500px;
+            border: solid 1px black;
+            margin-top: 250px;
+        }
+
+   
+        .button a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 5px;
+            font-size: 18px;
+            width: 20px;
+            height: 10px;
+            transition: width 0.3s;
+        }
+
+        
+        .button a:hover {
+            width: 100px;
+        }
+
+        
+
+       
+        .green { background-color: #009688; }
+        .blue { background-color: #2196F3; }
+        .red { background-color: #9a3e37; }
+        .gray { background-color: #555; }
+        
+        .button{
+            background-color: white;
+        }
+       
+        .content {
+            margin-left: 80px;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="sidebar">
+    <div class="button">
+        <a href="#" class="green"><span></span></a>
+        <a href="#" class="blue"><span></span></a>
+        <a href="#" class="red"><span></span></a>
+        <a href="#" class="gray"><span></span></a>
+    </div>
+
+    <div class="content">
+        <h1>Hoverable Sidenav Buttons</h1>
+        <p>Hover over the buttons in the left side navigation to slide them out individually.</p>
+    </div>
+ </div>
+
+</body>
+</html>

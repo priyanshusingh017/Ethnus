@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table</title>
+    <style>
+        
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #212529;
+        }
+
+        .header p {
+            color: #6c757d;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+
+        .pricing-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .pricing-card {
+            background: #fff;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 24px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        }
+
+        .plan-name {
+            font-size: 20px;
+            color: #212529;
+            margin-bottom: 16px;
+        }
+
+        .price {
+            font-size: 48px;
+            color: #212529;
+            margin-bottom: 16px;
+        }
+
+        .price span {
+            font-size: 16px;
+            color: #6c757d;
+        }
+
+        .features {
+            list-style: none;
+            margin-bottom: 24px;
+        }
+
+        .features li {
+            color: #6c757d;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            width: 80%;
+        }
+
+        .btn-outline {
+            color: #007bff;
+            border: 1px solid #007bff;
+            background: transparent;
+        }
+
+        .btn-outline:hover {
+            background: #007bff;
+            color: #fff;
+        }
+
+        .btn-primary {
+            background: #007bff;
+            color: #fff;
+            border: 1px solid #007bff;
+        }
+
+        .btn-primary:hover {
+            background: #0056b3;
+            border-color: #0056b3;
+        }
+
+        .footer {
+            margin-top: 80px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1200px;
+            padding: 0 20px;
+        }
+
+        .footer-section {
+            margin-right: 40px;
+        }
+
+        .footer-section h3 {
+            color: #212529;
+            margin-bottom: 16px;
+            margin-left: 40px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-section ul li a {
+            color: #6c757d;
+            text-decoration: none;
+        }
+
+        .footer-section ul li a:hover {
+            color: #007bff;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            
+            color: black;
+            width: 100%;
+            border: transparent 1px;
+            border-color: none;
+            box-shadow: 0 0.5rem 1rem rgba(106, 104, 104, 0.15);
+        }
+        .right{
+
+           margin-left: 15px;
+        }
+        .left a{
+            margin-right: 15px;
+            text-decoration: none;
+            color: black;
+
+        }
+        .left{
+            margin-top: 20px;
+        }
+        .line{
+            margin-top: 50px;
+            border: double;
+            width: 100%;
+            border-color: #eeecec;
+            border-collapse: collapse;
+        }
+        .left button{
+            background-color: white;
+            padding: 5px;
+            border-color: #00e5ff;
+            color: rgb(0, 195, 255);
+            margin-right: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="right">
+            <h4>Company Name</h4>
+        </div>
+        <div class="left">
+            <a href="">Features</a>
+            <a href="">Enterprise</a>
+            <a href="">Support</a>
+            <a href="">Pricing</a>
+            <button>Sign up</button>
+        </div>
+    </div>
+    <div class="header">
+        <h1>Pricing</h1>
+        <p>Quickly build an effective pricing table for your potential customers with this Bootstrap example. It's built with default Bootstrap components and utilities with little customization.</p>
+    </div>
+
+    <div class="pricing-container">
+        <div class="pricing-card">
+            <h2 class="plan-name">Free</h2>
+            <div class="price">$0<span>/mo</span></div>
+            <ul class="features">
+                <li>10 users included</li>
+                <li>2 GB of storage</li>
+                <li>Email support</li>
+                <li>Help center access</li>
+            </ul>
+            <a href="#" class="btn btn-outline">Sign up for free</a>
+        </div>
+
+        <div class="pricing-card">
+            <h2 class="plan-name">Pro</h2>
+            <div class="price">$15<span>/mo</span></div>
+            <ul class="features">
+                <li>20 users included</li>
+                <li>10 GB of storage</li>
+                <li>Priority email support</li>
+                <li>Help center access</li>
+            </ul>
+            <a href="#" class="btn btn-primary">Get started</a>
+        </div>
+
+        <div class="pricing-card">
+            <h2 class="plan-name">Enterprise</h2>
+            <div class="price">$29<span>/mo</span></div>
+            <ul class="features">
+                <li>30 users included</li>
+                <li>15 GB of storage</li>
+                <li>Phone and email support</li>
+                <li>Help center access</li>
+            </ul>
+            <a href="#" class="btn btn-primary">Contact us</a>
+        </div>
+    </div>
+    <div class="line">
+
+    </div>
+    <div class="footer">
+        <div class="footer-section">
+            <h3>Features</h3>
+            <ul>
+                <li><a href="#">Cool stuff</a></li>
+                <li><a href="#">Random feature</a></li>
+                <li><a href="#">Team feature</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Resources</h3>
+            <ul>
+                <li><a href="#">Resource</a></li>
+                <li><a href="#">Resource name</a></li>
+                <li><a href="#">Another resource</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>About</h3>
+            <ul>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Privacy</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

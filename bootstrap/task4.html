@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material Cards</title>
+    <style>
+       
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+            padding: 30px;
+            border-top: black 1px solid;
+            border-width: 3px;
+            
+        }
+
+        .card {
+            background: white;
+            border-radius: 2px;
+            width: 250px;
+            position: relative;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            height: 80vh;
+        }
+
+        .card:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transform: translateY(-2px);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card-image .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card-image .title {
+            color: white;
+            font-size: 24px;
+            font-weight: 500;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .card-content {
+            padding: 16px;
+            
+        }
+
+        .card-description {
+            color: rgba(14, 2, 2, 0.87);
+            font-size: 25px;
+            line-height: 1.5;
+            margin-bottom: 16px;
+            border-bottom: black 1px solid;
+            padding-bottom: 30px;
+        }
+
+        .card-links {
+            padding-top: 20px;
+            display: flex;
+            gap: 16px;
+            
+        }
+
+        .card-link {
+            color: #FF9800;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 20px;
+            font-weight: bold;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            transition: color 0.3s ease;
+        }
+
+        .card-link:hover {
+            color: #F57C00;
+        }
+
+        /* Making cards responsive */
+        @media (max-width: 640px) {
+            body {
+                justify-content: center;
+            }
+            
+            .card {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <!-- Card 1 -->
+    <div class="card">
+        <div class="card-image">
+            <img class="img-responsive" src="https://unsplash.it/400/400">
+            <div class="overlay">
+                <h2 class="title">MATERIAL CARDS</h2>
+            </div>
+        </div>
+        <div class="card-content">
+            <p class="card-description">Cards for display in portfolio style material design by Google.</p>
+            
+            <br>
+            <div class="card-links">
+                <br>
+                <a href="#" class="card-link">Link</a>
+                <a href="#" class="card-link">Link</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+        <div class="card-image">
+            <img class="img-responsive" src="https://unsplash.it/400/200">
+            <div class="overlay">
+                <h2 class="title">MATERIAL CARDS</h2>
+            </div>
+        </div>
+        <div class="card-content">
+            <p class="card-description">Cards for display in portfolio style material design by Google.</p>
+            <div class="card-links">
+                <a href="#" class="card-link">Link</a>
+                <a href="#" class="card-link">Link</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+        <div class="card-image">
+            <img class="img-responsive" src="https://unsplash.it/400/300">
+            <div class="overlay">
+                <h2 class="title">MATERIAL CARDS</h2>
+            </div>
+        </div>
+        <div class="card-content">
+            <p class="card-description">Cards for display in portfolio style material design by Google.</p>
+            <div class="card-links">
+                <a href="#" class="card-link">Link</a>
+                <a href="#" class="card-link">Link</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card">
+        <div class="card-image">
+            <img class="img-responsive" src="https://unsplash.it/400/300">
+            <div class="overlay">
+                <h2 class="title">MATERIAL CARDS</h2>
+            </div>
+        </div>
+        <div class="card-content">
+            <p class="card-description">Cards for display in portfolio style material design by Google.</p>
+            <div class="card-links">
+                <a href="#" class="card-link">Link</a>
+                <a href="#" class="card-link">Link</a>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

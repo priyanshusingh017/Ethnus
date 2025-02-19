@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .vertical-nav-bar{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; 
+            width: 200px;
+            height: 200px;
+            border: solid 1px black;
+            padding: 10px;
+            color: blue;
+        }
+        .home{
+            background-color: orange;
+            padding: 10px;
+            font-size: larger;
+        }
+        .java,.HTML,.CSS,.Bootstrap{
+             padding: 10px;
+            font-size: larger;
+            background-color: aqua;
+        }
+        .horizontal-nav-bar{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: space-between;
+            width: fit-content;
+            height: auto;
+            border: solid 1px black;
+            padding: 10px;
+            color: blue;
+            padding-right: 0;
+        }
+        #home{
+            background-color: gray;
+            padding: 15px;
+            font-size: larger;
+            color: white;
+            width: 40px;
+            height: 25px;
+            border: solid 1px black;
+        }
+        #java,#html,#css,#Html{
+            padding: 15px;
+            font-size: larger;
+            background-color: #d4d4d4;
+            width: 40px;
+            height: 25px;
+            border: solid 1px blue;
+        }
+        body{
+            display: flex;
+        }
+        .horizontal{
+            margin-top: 100px;
+            margin-left: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="vertical">
+    <h1>Vertical Nav Bar</h1>
+    <div class="vertical-nav-bar">
+        <div class="home">Home</div>
+        <div class="java">Java</div>
+        <div class="HTML">HTML</div>
+        <div class="CSS">CSS</div>
+        <div class="Bootstrap">Bootstrap</div>
+    </div>
+</div>
+
+    <div class="horizontal">
+  <h1>Horizontal Nav Bar</h1>
+    <div class="horizontal-nav-bar">
+       <div id="home">Home</div>
+       <div id="java">Java</div>
+       <div id="css">CSS</div>
+       <div id="html">HTML</div>
+       <div id="Html"></div>
+    </div>
+</div>
+
+</body>
+</html>

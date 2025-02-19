@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <style>
+        body {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           height: 100vh;
+           margin: 0;
+        }
+
+        .form {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: inline-block;
+            width: 120px;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 200px;
+            padding: 5px;
+            margin-left: 10px;
+        }
+
+       
+
+        button:hover {
+            background-color: rgb(232, 232, 139);
+        }
+
+        
+    </style>
+</head>
+<body>
+    <form id="registrationForm">
+        <div class="form">
+            <label>Full Name:</label>
+            <input type="text"  value="Vincent Maverick Durano">
+        </div>
+
+        <div class="form">
+            <label>Username:</label>
+            <input type="text"  value="Venz">
+        </div>
+
+        <div class="form">
+            <label>Password:</label>
+            <input type="Password"  value="dfasfaf">
+        </div>
+
+        <div class="form">
+            <label>Re-Password:</label>
+            <input type="Password"  value="dsdfdsf">
+        </div>
+
+        <div class="form">
+            <label>Address:</label>
+            <input type="text" value="Cebu, Philipphines">
+        </div>
+
+        <div class="form">
+            <label>Age:</label>
+            <input type="number" value="22">
+        </div>
+
+        <div class="form">
+            <label>Gender:</label>
+            <select>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+
+        <button >Save</button>
+    </form>
+</body>
+</html>

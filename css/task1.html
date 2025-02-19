@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<html>
+<head>
+    <style>
+        
+        .table {
+            border-collapse: separate;
+            border-spacing: 0;
+            width: 800px;
+            margin-bottom: 40px;
+        }
+
+         th,td{
+            border: 2px solid black;
+            padding: 10px;
+            border-radius: 20px ;
+            background-color: #B0E0E0;
+            text-align: left;
+        }
+
+         th {
+            font-size: 18px;
+        }
+
+        .shapes{
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        .shape {
+            height: 50px;
+            border: 2px solid #257725;
+            border-radius: 5px;
+        }
+
+        .oval {
+            border-radius: 50%;
+        }
+
+        
+        .container{
+            background-color:  #B0E0E0;
+            border-radius: 5px;
+            width: fit-content;
+            height: 170px;
+            margin-left: 25%;
+            margin-right: 25%;
+            margin-top: 10%;
+            border: solid;
+            border-left: none;
+        }
+    </style>
+</head>
+<body>
+   
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>80</td>
+            </tr>
+        
+        </tbody>
+   
+    </table>
+</div>
+
+    <div class="shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape oval"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+</body>
+</html>

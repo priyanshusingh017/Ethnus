@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Form Validation</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body{
+            background-color: d=#d4d4d4;
+        }
+        .error-text {
+            color: #dc3545;
+            font-size: 0.875em;
+        }
+        .error-icon {
+            color: #dc3545;
+            font-size: 1.2em;
+            position: absolute;
+            right: 10px;
+            top: 35px;
+        }
+        .form-control.is-invalid {
+            border-color: #dc3545;
+            padding-right: 2.25rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <form>
+            
+            <div class="mb-4 position-relative">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control is-invalid" id="name" placeholder="">
+                
+                <div class="error-text">Name is required</div>
+            </div>
+
+           
+            <div class="mb-4 position-relative">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control is-invalid" id="email" placeholder="">
+              
+                <div class="error-text">Email is required</div>
+            </div>
+
+           
+            <div class="mb-4 position-relative">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control is-invalid" id="password" placeholder="">
+             
+                <div class="error-text">Password is required</div>
+            </div>
+
+           
+            <div class="mb-4">
+                <label for="hobbies" class="form-label">Hobbies</label>
+                <select class="form-select" id="hobbies">
+                    <option selected disabled>Choose...</option>
+                    <option value="reading">Reading</option>
+                    <option value="sports">Sports</option>
+                    <option value="music">Music</option>
+                    <option value="traveling">Traveling</option>
+                </select>
+            </div>
+
+            
+            <button type="submit" class="btn btn-danger w-100">Submit</button>
+        </form>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

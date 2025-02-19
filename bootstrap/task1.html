@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethnus Layout</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        
+       
+        .header {
+            background-color: #00bfff;
+            text-align: center;
+            padding: 15px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .navbar {
+            background-color: #888888;
+            display: flex;
+            justify-content: flex-start;
+            padding: 10px;
+        }
+        
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        
+        .navbar .right-nav {
+            margin-left: auto;
+            margin-top: 10px;
+        }
+        
+        .navbar a:hover {
+            background-color: #555;
+        }
+
+        .container {
+            display: flex;
+            height: 80vh;
+        }
+
+        .main-content {
+            flex: 3;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .sidebar {
+            flex: 1;
+            background-color: #555;
+            color: white;
+            padding: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>Ethnus layout</h2>
+    </div>
+    <div class="navbar">
+        <a href="#">HOME</a>
+        <a href="#">MENU</a>
+        <a href="#">ABOUT</a>
+        <a href="#">CONTACT</a>
+        <div class="right-nav">
+            <a href="#">SIGNUP</a>
+            <a href="#">LOGIN</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="main-content">
+            <p>Write your content here</p>
+        </div>
+        <div class="sidebar">
+            <p>This is</p>
+        </div>
+    </div>
+</body>
+</html>

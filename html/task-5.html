@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: blue;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 900px;
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 5px;
+            border: 1px solid #000;
+        
+        }
+
+       
+
+        input
+        select,
+        textarea {
+            width: 90%;
+            padding: 3px;
+            border: solid 1px #000;
+        }
+
+        textarea {
+            height: 60px;
+            resize: none;
+        }
+        select {
+            width: 100%;
+        }
+
+        .declaration {
+            margin: 10px 0;
+        }
+
+        .login {
+            text-align: right;
+            margin: 10px 0;
+        }
+
+        .center {
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registration form</h1>
+    <form>
+        <table border="1">
+            <tr>
+                <td>First Name</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td>Re-enter Password</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td class="radio">
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">Male</label>
+                    <br>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><textarea></textarea></td>
+            </tr>
+            <tr>
+                <td>State</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Country</td>
+                <td>
+                    <select title="Country">
+                        <option>Choose your country</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Languages known</td>
+                <td >
+                    <input type="checkbox" id="english">
+                    <label for="english">English</label>
+                    <input type="checkbox" id="kannada">
+                    <label for="kannada">Kannada</label>
+                    <input type="checkbox" id="hindi">
+                    <label for="hindi">Hindi</label>
+                    <input type="checkbox" id="telugu">
+                    <label for="telugu">Telugu</label>
+                </td>
+            </tr>
+       
+        
+        
+   <tr>
+        <td colspan="2"> <input type="checkbox" >
+            <label for="declare">Hereby I declare all the given details are true</label>
+        </td>
+    </tr>
+       
+   
+       <tr> <td colspan="2">
+            <div class="login">
+            Log in to <a href="#">Ethnus</a> website
+        </div>
+    </td>
+</tr>
+  
+    </table>
+        <div class="center">
+            <input type="submit" value="Register">
+        </div>
+   
+    </form>
+</body>
+</html>
