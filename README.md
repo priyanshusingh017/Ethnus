@@ -43,16 +43,16 @@ The **Ethnus Project** is a fully responsive and interactive web application tha
 
 
 ## Navigate to the project directory.
---Open the index.html file in your web browser to explore the project.
+- Open the index.html file in your web browser to explore the project.
 
 ---
 
 ## Contributions
 Contributions are encouraged to improve the project!
 
-Fork the repository.
-Report any issues you find.
-Submit pull requests with enhancements or fixes.
+- Fork the repository.
+- Report any issues you find.
+- Submit pull requests with enhancements or fixes.
 
 ---
 
