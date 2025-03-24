@@ -6,7 +6,7 @@ Welcome to the **Ethnus Project**! This repository showcases a web application d
 
 ## Live Demo  
 
-🌐 **Check out the live demo here**: [Ethnus Live Demo](https://kingofdarknight.github.io/Ethnus/)  
+🌐 **Check out the live demo here**: [Ethnus Live Demo](https://priyanshusingh017.github.io/Ethnus/)  
 
 ---
 
